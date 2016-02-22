@@ -1,0 +1,71 @@
+<html>
+<head>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+</head>
+
+<body>
+  <section class="wrapper" id="wrapper">
+    <div class="main-container">
+      <center>
+        <!-- <img src="images/ik-logo.png" width="120px" class="main-image" id="logo"/> -->
+      </center>
+      <br />
+      <h3 class="sub-header" id="handle">@realiesh</h3>
+      <h1 class="main-header" id="header">Ieshaan Khanna</h1>
+      <br />
+      <div class="links">
+        <center>
+          <ul>
+            <!-- <li><a href="#" class="main-link grey">View Reel</a></li> -->
+            <!-- <li><a href="#" class="main-link grey">About</a></li> -->
+          </ul>
+        </center>
+      </div>
+      <center>
+        <a href="#" class="big-link" id="pbtn"><i class="fa fa-play-circle fa-lg"></i> &nbsp; Portfolio</a>
+      </center>
+    </div
+  </section>
+  <script>
+    $(document).ready(function() {
+      var header = document.getElementById("header");
+      header.className += " animated zoomIn";
+
+      var handle = document.getElementById("handle");
+      handle.className += " animated zoomIn";
+
+      // var logo = document.getElementById("logo");
+      // logo.className += " animated zoomIn";
+
+      var portfolioButton = document.getElementById("pbtn");
+      portfolioButton.className += " animated zoomIn";
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      timedText();
+    });
+    function timedText() {
+      setTimeout(fadedBlueGreen, 0);
+      setTimeout(fadedRed, 9000);
+      setTimeout(fadedPurple, 18000);
+    }
+    function fadedBlueGreen() {
+        $('#wrapper').animate({backgroundColor: 'linear-gradient(rgba(30,50,60,0.95), rgba(40,40,70,0.95))'}, 0);
+    }
+    function fadedRed() {
+        $('#wrapper').animate({backgroundColor: 'linear-gradient(rgba(130,50,60,0.95), rgba(140,40,70,0.95))'}, 8000);
+    }
+    function fadedPurple() {
+        $('#wrapper').animate({backgroundColor: 'linear-gradient(rgba(40,20,60,0.95), rgba(50,15,75,0.95))'}, 8000);
+    }
+  </script>
+</body>
+
+</html>
