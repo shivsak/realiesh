@@ -67,12 +67,13 @@
 
   <script>
     $(document).ready(function() {
-      timedText();
+        timedText();
     });
     function timedText() {
       setTimeout(fadedRed, 0);
       setTimeout(fadedBlueGreen, 9000);
       setTimeout(fadedPurple, 18000);
+      setTimeout(fadedRedSlow, 27000);
     }
     function fadedBlueGreen() {
         $('#wrapper').animate({backgroundColor: 'linear-gradient(rgba(30,50,60,0.95), rgba(40,40,70,0.95))'}, 8000);
@@ -83,6 +84,10 @@
     function fadedPurple() {
         $('#wrapper').animate({backgroundColor: 'linear-gradient(rgba(40,20,60,0.95), rgba(50,15,75,0.95))'}, 8000);
     }
+    function fadedRedSlow() {
+        $('#wrapper').animate({backgroundColor: 'linear-gradient(rgba(130,50,60,0.95), rgba(140,40,70,0.95))'}, 8000);
+    }
+
   </script>
 
   <script>
