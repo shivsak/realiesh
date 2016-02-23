@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Londrina+Solid);
 
 body {
   padding: 0px;
@@ -33,7 +34,8 @@ body {
 
 .main-header {
   font-size: 50pt;
-  font-family: 'Lato', 'HelveticaNeue', Helvetica, sans-serif;
+  font-family: 'Londrina Solid', 'Lato', 'HelveticaNeue', Helvetica, sans-serif;
+  letter-spacing: 5px;
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -42,6 +44,7 @@ body {
 .sub-header {
   font-size: 20pt;
   font-family: 'Lato', 'HelveticaNeue', Helvetica, sans-serif;
+  letter-spacing: 0px;
   color: rgba(255, 255, 255, 0.7);
   margin: 0 auto;
   text-align: center;
@@ -66,7 +69,7 @@ li {
   text-decoration: none;
   color: white;
   border-radius: 4px;
-  font-family: 'Lato', 'HelveticaNeue', Helvetica, sans-serif;
+  font-family: 'Londrina Solid', 'Lato', 'HelveticaNeue', Helvetica, sans-serif;
   font-size: 14pt;
 }
 
@@ -99,5 +102,67 @@ li {
   background: rgba(255,255,255,0.2);
   border: 0px solid rgba(255,255,255,0.2);
   font-family: 'Lato', 'HelveticaNeue', Helvetica, sans-serif;
+  letter-spacing: 0px;
   font-size: 14pt;
+}
+
+.navbar {
+  position: absolute;
+  top: 0px;
+  padding: 0px 0 0 0;
+  margin: 0 auto;
+  width: 100%;
+  background: none;
+}
+
+.social-icon, .social-icon:visited, .social-icon:active {
+  color:rgba(255,255,255,1);
+  float: right;
+  margin: 20px 30px 0px 0px;
+  opacity: 0.25;
+}
+
+.social-icon:hover {
+  opacity: 0.75;
+}
+
+#portfolio {
+  opacity: 1;
+  display: none;
+}
+
+.portfolio-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.6));
+  border: 0px solid rgba(0,0,0,0.1);
+  border-radius: 0px;
+  z-index: 100;
+}
+
+
+.portfolio-box {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 600px;
+  margin: -320px 0px 0px -400px;
+  background: rgba(0,0,0,1);
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 0px;
+}
+
+.portfolio-close {
+  top: 0px;
+  color: rgba(0,0,0,0.3);
+  text-decoration: none;
+  font-family: 'Lato', 'HelveticaNeue', Helvetica, sans-serif;
+  float: right;
+  margin: 15px 20px;
+  font-size: 22pt;
 }
